@@ -1,4 +1,4 @@
-const apiKey = 'f6b9dd51cb654c308ab141904240809'; // Replace with your WeatherAPI key
+const apiKey = 'f6b9dd51cb654c308ab141904240809'; 
 const weatherContainer = document.getElementById('weatherContainer');
 let isCelsius = true; // Track if temperature is in Celsius
 
@@ -50,7 +50,7 @@ function toggleTemperatureUnit() {
     isCelsius = !isCelsius;
     const city = document.getElementById('cityInput').value;
     if (city) {
-        getWeather(); // Fetch and update weather data with new unit
+        getWeather(); 
     }
 }
 
@@ -60,19 +60,19 @@ function updateBackgroundImage(condition) {
 
     switch (condition.toLowerCase()) {
         case 'sunny':
-            imageUrl = 'images/sunny.jpg'; // Path to sunny background image
+            imageUrl = 'images/sunny.jpg'; 
             break;
         case 'cloudy':
-            imageUrl = 'images/cloudy.jpg'; // Path to cloudy background image
+            imageUrl = 'images/cloudy.jpg'; 
             break;
         case 'rain':
-            imageUrl = 'images/rain.jpg'; // Path to rainy background image
+            imageUrl = 'images/rain.jpg'; 
             break;
         case 'snow':
-            imageUrl = 'images/snow.jpg'; // Path to snowy background image
+            imageUrl = 'images/snow.jpg'; 
             break;
         default:
-            imageUrl = 'images/default.jpg'; // Path to default background image
+            imageUrl = 'images/default.jpg'; 
             break;
     }
 
